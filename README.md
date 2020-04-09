@@ -5,6 +5,7 @@ This my personal note that shows the important steps/codes for compromising vm b
 ----------------------------------------------------------------------------------------------------------------------------------------
 
 **1.Cloud Antivirus Scanner**
+
 VM link is https://www.vulnhub.com/entry/boredhackerblog-cloud-av,453/
 
 The web with port 8080 can be discover via nikto, do an SQL injection to login the web portal, someone online did an brute force, and find a invite code  "password"  
